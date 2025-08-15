@@ -1,0 +1,19 @@
+{
+  "name": "newtab",
+  "version": "1.0.0",
+  "description": "new tab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phrosyne/newtab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phrosyne/newtab/issues"
+  },
+  "homepage": "https://github.com/Phrosyne/newtab#readme"
+}
