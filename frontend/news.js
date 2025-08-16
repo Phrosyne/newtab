@@ -6,7 +6,7 @@ async function getNews() {
         .then(key => key.articles);
 
     news_articles.forEach(article => {
-        news.innerHTML += `<a href="${article.url}">${article.title}</a><br><br>`
+        news.innerHTML += `<a target="_blank" href="${article.url}">${article.title}</a><br><br><hr><br>`
     });
 }
 
