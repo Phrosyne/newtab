@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "My Custom New Tab",
+  "version": "1.0",
+  "description": "Custom new tab dashboard with news and weather.",
+  "chrome_url_overrides": {
+    "newtab": "frontend/index.html"
+  },
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://api.openweathermap.org/*",
+    "https://newsapi.org/*",
+    "http://localhost:3000/*"
+  ]
+}

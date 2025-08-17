@@ -1,7 +1,7 @@
 const news = document.querySelector('#articles');
 
 async function getNews() {
-    const news_articles = await fetch('/headlines/')
+    const news_articles = await fetch('http://localhost:3000/headlines/')
         .then(data => data.json())
         .then(key => key.articles);
 

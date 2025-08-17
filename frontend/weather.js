@@ -3,8 +3,10 @@ const weatherElement = document.querySelector('#weather');
 async function getWeather(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
+    console.log(latitude);
+    console.log(longitude);
 
-    const weatherJSON = await fetch(`/${latitude}/${longitude}/`)
+    const weatherJSON = await fetch(`http://localhost:3000/${latitude}/${longitude}/`)
         .then(data => data.json());
     
     const temp = await Math.round(weatherJSON.current.temp);
