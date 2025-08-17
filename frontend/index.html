@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preload" href="./styles.css" as="style">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" defer>
 
-    <link rel="preload" href="./index.js" as="script">
     <link rel="preload" href="./weather.js" as="script">
     <link rel="preload" href="./news.js" as="script">
+    <script src="./index.js" defer></script>
     <title>Home</title>
 </head>
 
@@ -18,14 +18,14 @@
     <div id="weather-container">
         <div id="weather"></div>
     </div>
-
+<!-- 
     <div id="greeting">
         <h1 id="greeting_text"></h1>
-    </div>
+    </div> -->
 
-    <div id="search">
+    <!-- <div id="search">
         <input type="search" placeholder="Search" />
-    </div>
+    </div> -->
 
     <div id="news-container">
         <div id="header">
@@ -37,7 +37,6 @@
     </div>
     <script src="./weather.js" defer></script>
     <script src="./news.js" defer></script>
-    <script src="./index.js" defer></script>
 </body>
 
 </html>
