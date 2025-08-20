@@ -8,6 +8,25 @@ const input = document.createElement('input');
 input.id = 'search';
 input.type = 'search';
 input.placeholder = 'Search';
+input.style.height = '2rem';
+
+var keysPressed = new Map();
+var str = [];
+
+function searchQuery(string) {
+    window.open(`https://google.com/search?q=${input.value}`, "_self")
+}
+
+input.addEventListener('keydown', (e) => {
+    if (e.key != "Enter") {
+        str.push(e.key);
+    }
+
+    if (e.key == "Enter") {
+        console.log(str);
+        searchQuery(str);
+    }
+});
 
 div.style.display = 'flex';
 div.style.flexDirection = 'column';
