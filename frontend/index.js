@@ -4,13 +4,20 @@ div.id = 'greeting';
 const h1 = document.createElement('h1');
 h1.id = 'greeting_text';
 
+const settings_icon = document.querySelector('#settings');
+const settings_page = document.querySelector('#settings-page-container');
+var settings_visible = false;
+
+settings_icon.addEventListener('click', () => {
+    settings_page.classList.toggle('show');
+})
+
 const input = document.createElement('input');
 input.id = 'search';
 input.type = 'search';
 input.placeholder = 'Search';
 input.style.height = '2rem';
 
-var keysPressed = new Map();
 var str = [];
 
 function searchQuery(string) {
