@@ -1,0 +1,28 @@
+#light-switch, #display-news, #display-weather {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3 {
+    font-size: xx-large;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: gray;
+    border-radius: 15px;
+    width: 6rem;
+    height: 4rem;
+    border: 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
