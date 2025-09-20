@@ -16,7 +16,8 @@ const input = document.createElement('input');
 input.id = 'search';
 input.type = 'search';
 input.placeholder = 'Search';
-input.style.height = '2rem';
+input.style.height = '2.5rem';
+input.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
 
 var str = [];
 
