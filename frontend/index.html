@@ -8,6 +8,9 @@
     <link rel="preload" href="./styles.css" as="style">
     <link rel="stylesheet" href="./styles.css" defer>
 
+    <link rel="preload" href="./settings.css" as="style">
+    <link rel="stylesheet" href="./settings.css" defer>
+
     <link rel="preload" href="./weather.js" as="script">
     <link rel="preload" href="./news.js" as="script">
     <script src="./index.js" defer></script>
@@ -20,9 +23,29 @@
     </div>
 
     <div id="settings-page-container">
-        <div id="settings-page"></div>
+        <div id="settings-page">
+            <h3>Settings</h3>
+
+            <h4>Light Switch</h4>
+            <div id="light-switch">
+                <button class="btn" id="light">LIGHT</button>
+                <button class="btn" id="dark">DARK</button>
+            </div>
+
+            <h4>Display News</h4>
+            <div id="display-news">
+                <button class="btn">ON</button>
+                <button class="btn">OFF</button>
+            </div>
+
+            <h4>Display Weather</h4>
+            <div id="display-weather">
+                <button class="btn">ON</button>
+                <button class="btn">OFF</button>
+            </div>
+        </div>
     </div>
-<!-- 
+    <!-- 
     <div id="greeting">
         <h1 id="greeting_text"></h1>
     </div> -->
@@ -41,7 +64,7 @@
             <div id="articles"></div>
         </div>
     </div>
-    
+
     <script src="./weather.js" defer></script>
     <script src="./news.js" defer></script>
 </body>
