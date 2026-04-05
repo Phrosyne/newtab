@@ -19,6 +19,10 @@ input.placeholder = 'Search';
 input.style.height = '2.5rem';
 input.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
 
+window.addEventListener("load", (event) => {
+    input.focus();
+});
+
 var str = [];
 
 function searchQuery(string) {
