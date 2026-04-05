@@ -26,7 +26,3 @@ h4 {
 .btn:hover {
     cursor: pointer;
 }
-
-#settings-page {
-    overflow-y: scroll;
-}
