@@ -18,6 +18,10 @@ input.type = 'search';
 input.placeholder = 'Search';
 input.style.height = '2rem';
 
+window.addEventListener("load", (event) => {
+    input.focus();
+});
+
 var str = [];
 
 function searchQuery(string) {
