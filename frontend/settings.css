@@ -11,12 +11,14 @@ h3 {
 }
 
 h4 {
+    font-size: x-large;
     margin-top: 4rem;
     text-align: center;
 }
 
 .btn {
-    background-color: gray;
+    background-color: transparent;
+    font-size: larger;
     border-radius: 15px;
     width: 6rem;
     height: 4rem;
@@ -25,4 +27,5 @@ h4 {
 
 .btn:hover {
     cursor: pointer;
+    color: white;
 }
