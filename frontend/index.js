@@ -18,6 +18,7 @@ input.type = 'search';
 input.placeholder = 'Search';
 input.style.height = '2.5rem';
 input.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
+input.classList.add("blur");
 
 var str = [];
 
@@ -31,7 +32,6 @@ input.addEventListener('keydown', (e) => {
     }
 
     if (e.key == "Enter") {
-        console.log(str);
         searchQuery(str);
     }
 });
@@ -45,9 +45,6 @@ const bounce = [
     {transform: "translateY(30px)", offset: .5}, 
 	{transform: "translateY(-15px)", offset: .75},
 	{opacity: 1, transform: "translateY(0)", offset: 1}
-	// {transform: "translateY(50px)", offset: 0.7},
-	// {transform: "translateY(-50px)", offset: 0.8},
-    // {opacity: 100, transform: "translateY(0)", offset: 1} 
 ]
 
 div.animate(bounce, {
